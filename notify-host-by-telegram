@@ -1,0 +1,1 @@
+/usr/bin/curl -X POST --data chat_id=$CONTACTPAGER$ --data text="***** Nagios *****%0A%0ANotification Type: $NOTIFICATIONTYPE$%0AHost: $HOSTNAME$%0AState: $HOSTSTATE$%0AAddress: $HOSTADDRESS$%0AInfo: $HOSTOUTPUT$%0A%0ADate/Time: $LONGDATETIME$%0A" https://api.telegram.org/bot$BOT-TOKEN$/sendMessage
